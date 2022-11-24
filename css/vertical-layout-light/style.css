@@ -30592,4 +30592,32 @@ div.tagsinput span.tag a {
   }
 }
 
+/* zzz */
+
+.brand-logo h3{
+  line-height: 35px;
+}
+
+.login-navbar {
+  display: flex !important;
+}
+
+
+.login-header {
+  justify-content: left !important;
+  /* width: 100% !important; */
+}
+
+.login-header h1 {
+  font-size: 30px;
+}
+
+.login-logo *{
+  margin: 0 !important;
+}
+
+.navbar .login-logo {
+  width: 100px;
+}
+
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
