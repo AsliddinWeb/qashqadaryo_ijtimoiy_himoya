@@ -30609,4 +30609,19 @@ div.tagsinput span.tag a {
   height: 100px !important;
 }
 
+.home-icon {
+  display: flex;
+  width: 150px;
+  align-items: center;
+}
+
+.home-icon i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.alert-title h3{
+  margin: 0;
+}
+
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
