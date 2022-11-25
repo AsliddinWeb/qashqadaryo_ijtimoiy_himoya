@@ -18,7 +18,6 @@
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="css/vertical-layout-light/style.css">
-  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
 </head>
@@ -28,9 +27,9 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="./800px-Emblem_of_Uzbekistan.svg.png"
+        <a class="navbar-brand brand-logo mr-5" href="./adminPanel.html"><img src="./800px-Emblem_of_Uzbekistan.svg.png"
             class="mr-2" alt="logo" /></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="./800px-Emblem_of_Uzbekistan.svg.png"
+        <a class="navbar-brand brand-logo-mini" href="./adminPanel.html"><img src="./800px-Emblem_of_Uzbekistan.svg.png"
             alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -315,7 +314,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="./adminPanel.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Bosh sahifa</span>
             </a>
@@ -328,10 +327,10 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Kunlik</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Xaftalik</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Oylik</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Yillik</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./main.html">Kunlik</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./main.html">Xaftalik</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./main.html">Oylik</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./main.html">Yillik</a></li>
               </ul>
             </div>
           </li>
@@ -420,22 +419,97 @@
       </nav>
       <!-- partial -->
       <div class="main-panel">
+
         <div class="content-wrapper">
-          <div class="row">
-            <div class="col-md-12 grid-margin">
-              <div class="main-panel">
-                <div class="content-wrapper">
-                  <div class="row">
-                    <div class="col-md-12 grid-margin">
-                    <div class="alert alert-success alert-title" role="alert">
-                      <h3>Ma'lumotlar muvaffaqiyatli kiritildi</h3>
+            <div class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Ma'lumot kiritish</h4>
+                            <p class="card-description">
+                                "Ijtimoiy himoya" ga olingan aholi ma'lumotini kiritish
+                            </p>
+                            <form class="forms-sample">
+                                <div class="form-group">
+                                    <label for="exampleInputUsername1">FISH</label>
+                                    <input type="text" class="form-control" id="exampleInputUsername1"
+                                        placeholder="F.I.SH">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputUsername1">Doimiy yashash joyi</label>
+                                    <input type="text" class="form-control" id="exampleInputUsername2"
+                                        placeholder="Yashash manzili">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect2">Nogironligi</label>
+                                    <select class="form-control" id="exampleFormControlSelect2">
+                                        <option>Yo'q</option>
+                                        <option>I</option>
+                                        <option>II</option>
+                                        <option>III</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Pasport seriya raqami</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Seriya raqami">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Kiritilgan vaqti</label>
+                                    <input type="date" class="form-control" id="exampleInputDate1"
+                                        placeholder="24/11/2022">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputConfirmPassword1">Kimga murojaat qilgan?</label>
+                                    <input type="text" class="form-control" id="exampleInputConfirmPassword1"
+                                        placeholder="Murojat kimga?">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputConfirmPassword1">Mablag' ajratayotgan tashkilot
+                                        nomi.</label>
+                                    <input type="text" class="form-control" id="exampleInputConfirmPassword1"
+                                        placeholder="Tashkilot nomi">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputConfirmPassword1">Qancha summa ajratildi
+                                        (so'm)</label>
+                                    <input type="number" class="form-control" id="exampleInputConfirmPassword1"
+                                        placeholder="Tashkilot nomi">
+                                </div>
+                                <div class="form-group">
+                                    <label>Biriktirilgani fayllarni kiriting</label>
+                                    <input type="file" name="img[]" class="file-upload-default">
+                                    <div class="input-group col-xs-12">
+                                        <input type="text" class="form-control file-upload-info" disabled=""
+                                            placeholder="Fayllarni kiriting...">
+                                        <span class="input-group-append">
+                                            <button class="file-upload-browse btn btn-primary"
+                                                type="button">Kiritish</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="./success.html" type="submit" class="btn btn-primary mr-2">Saqlash</a>
+                                <button class="btn btn-light">Bekor qilish</button>
+                            </form>
+                        </div>
                     </div>
-                    <a class="btn btn-primary home-icon" href="./adminPanel.html" role="button"><i class="mdi mdi-home"></i> Bosh sahifa</a>
-                  </div>
-              </div>
+                </div>
             </div>
-          </div>
         </div>
+        
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022.
+              All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i
+                class="ti-heart text-danger ml-1"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
       <!-- main-panel ends -->
     </div>
     <!-- page-body-wrapper ends -->
